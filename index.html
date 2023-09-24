@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthKart</title>
+    <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/a7d3a8e44d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 left">
+                    <div class="row">
+                      <div class="logo left">
+                    <a href="#">
+                        <img src="./images/name.png">
+                    </a>
+                      </div>
+                      <div class="search left">
+                    <form action="#" >
+                        <input type="text" placeholder="search for products & brand here" style="height: 30px; width: 400px;"> 
+                        <button type="submit" style="display: none;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 right top">
+            <ul style="list-style: none;" >
+                <li>
+                    <a href="#"><i class="">Sign in</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+</div>
+</div>
+    <hr>
+    <!-- <section 1 options> -->
+        <div class="section-1">
+            <div class="container">
+                <div class="options" >
+                    <ul style="list-style: none;">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-list"> Shop by category</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-tag"> Best Sellers</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-award"> Brands</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-percent"> Offer Zone</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-blog"> Blogs</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-gift"> Gift Cards</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-message"> Customer Support</i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-location-dot"> Store Locator</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <Section 2 slider> -->
+
+            <div class="slider-box">
+                <div id="slider">
+                    <img src="./images/pic1.webp">
+                    <img src="./images/pic2.webp">
+                    <img src="./images/pic3.webp">
+                    <img src="./images/pic4.webp">
+                </div>
+                <div class="indicators">
+                    <span id="btn1" class="active"></span>
+                    <span id="btn2"></span>
+                    <span id="btn3"></span>
+                    <span id="btn4"></span>
+                </div>
+            </div>
+            <script>
+                var slide = document.getElementById("slider");
+                var btn1 = document.getElementById("btn1");
+                var btn2 = document.getElementById("btn2");
+                var btn3 = document.getElementById("btn3");
+                var btn4 = document.getElementById("btn4");
+
+                btn1.onclick = function() {
+                    slide.style.transform = "translateX(0px)";
+                    btn1.classList.add("active");
+                    btn2.classList.remove("active");
+                    btn3.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn2.onclick = function() {
+                    slide.style.transform = "translateX(-100%)";
+                    btn2.classList.add("active");
+                    btn1.classList.remove("active")
+                    btn3.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn3.onclick = function() {
+                    slide.style.transform = "translateX(-200%)";
+                    btn3.classList.add("active");
+                    btn1.classList.remove("active");
+                    btn2.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn4.onclick = function() {
+                    slide.style.transform = "translateX(-300%)";
+                    btn4.classList.add("active");
+                    btn1.classList.remove("active");
+                    btn2.classList.remove("active");
+                    btn3.classList.remove("active");
+                }
+            </script>
+            <!-- Section 3 products -->
+
+            <div class="section-3">
+                <div class="container">
+                     <h1 class="heading">Assured freebie : 4% HK cash</h1>
+                    <div class="AF">
+                        <div class="products">
+                            <img src="./images/biozme1.webp">
+                           <h4>MuscleBlaze Biozyme Performance Whey 2 Kg Chocolate 
+                            Hazelnut</h4> <h2>₹ 3999</h2>
+                        </div>
+                     <div class="products">
+                        <img src="./images/blze.webp">
+                        <h4>MuscleBlaze Super Gainer XXL, 3 kg (6.6 lb), Chocolate</h4>
+                        <h2>₹ 2499</h2>
+                     </div>
+                     <div class="products">
+                        <img src="./images/Pre-Workout.webp">
+                        <h4>MuscleBlaze Pre Workout WrathX 500 g (1.1 lb), Fruit Fury</h4>
+                        <h2>₹ 2499</h2>
+                     </div>
+                     <div class="products">
+                        <img src="./images/oil.webp">
+                        <h4>HealthKart HK Vitals Multivitamin & Fish Oil 60 caps & Shaker Combo</h4>
+                        <h2>₹ 699</h2>
+                    </div>
+                     <div>
+                         </div>
+                </div>
+                <h1 class="heading">Wellness Deals : 4% HK Cash</h1>
+                <div class="AF">
+                    <div class="products">
+                        <img src="./images/WD1.webp">
+                        <h4>HealthKart HK Vitals Skin Radiance Collagen,  200g, Watermelon</h4>
+                        <h2>₹ 869</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/WD2.webp">
+                        <h4>HealthKart HK Vitals Hair Multivitamin 60 caps & DHT Blocker with Biotin 60 tabs</h4>
+                        <h2>₹ 899</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/WD3.webp">
+                        <h4>HK Vitals ACV 750 mg Effervescent 15 Tabs Orange & Watermelon & Green Apple Combo by HealthKart</h4>
+                        <h2>₹ 899</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/WD4.webp">
+                        <h4>HealthKart HK Vitals Skin Radiance Collagen, 200 g, Mango</h4>
+                        <h2>₹ 869</h2>
+                    </div>
+                </div> 
+                <div class="AF ">
+                    <div class="adds">
+                        <img src="./images/add1.webp">
+                    </div>
+                    <div class="adds">
+                        <img src="./images/add2.webp">
+                    </div>
+                    <div class="adds">
+                        <img src="./images/add3.webp">
+                    </div>
+                    <div class="adds">
+                        <img src="./images/add4.webp">
+                    </div>
+                </div>
+                <h1 class="heading">Buy More Save More</h1>
+                <div class="AF">
+                    <div class="products">
+                        <img src="./images/BS1webp.webp">
+                        <h4>MuscleBlaze High Protein Peanut Butter 1 Kg Dark Chocolate Creamy with Free 100 g High Protein Muesli</h4>
+                        <h2>₹ 649</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/BS2.webp">
+                        <h4>MuscleBlaze Instant Oats 1kg & Sipper Bottle & HealthKart Fish Oil 60 Softgels 2 Piece(s)/Pack Combo</h4>
+                        <h2>₹ 1,000</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/BS3.webp">
+                        <h4>MuscleBlaze High Protein Oats 2 kg Dark Chocolate & Peanut Butter, 1 kg Dark Chocolate Creamy Combo</h4>
+                        <h2>₹ 1,749</h2>
+                    </div>
+                    <div class="products">
+                        <img src="./images/BS4.webp">
+                        <h4>MuscleBlaze Protein Bar 10 gm Protein 6 bars Choco Cranberry, Choco Almond & Cookies & Cream Combo</h4>
+                        <h2>₹ 999</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="contain">
+                    <img src="./images/hklogo.png"><div class="cf">
+                    <div class="row_heading">
+                        
+                        <h3>HealthKart</h3>
+
+                        <div row2>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Refer & Earn</a>
+                            </li>
+                            <li>
+                                <a href="#">Blogs,Videos & More</a>
+                            </li>
+                            <li>
+                                <a href="#">Loyalty Program</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                        
+                        </div>
+                    </div>
+                    <div class="row_heading">
+                        <h3>Brands</h3>
+                        <div row2>
+                            
+                                <li>
+                                    <a href="#">MuscleBlaze</a>
+                                </li>
+                            <li>
+                                <a href="#">Fit Foods</a>
+                            </li>
+                            <li>
+                                <a href="#">HK Vitals</a>
+                            </li>
+                            <li>
+                                <a href="#">TrueBasics</a>
+                            </li>
+                            <li>
+                                <a href="#">Gritzo</a>
+                            </li>
+                            <li>
+                                <a href="#">bGreen</a>
+                            </li>
+                        
+                        </div>
+                    </div>
+                    <div class="row_heading">
+                        <h3>Health & Fitness</h3>
+                        <div row2 >
+                            
+                                <li>
+                                    <a href="#">Hair & Skin Care</a>
+                                </li>
+                            <li>
+                                <a href="#">Sports Nutrition</a>
+                            </li>
+                            <li>
+                                <a href="#">Vitamins & Supplements</a>
+                            </li>
+                            <li>
+                                <a href="#">Ayurveda & Herbs</a>
+                            </li>
+                            <li>
+                                <a href="#">Health Food & Drinks</a>
+                            </li>
+                            <li>
+                                <a href="#">Fitness</a>
+                            </li>
+                        
+                        </div>
+                    </div>
+                    <div class="row_heading">
+                        <h3>Quick Links</h3>
+                        <div row2 >
+                            <li>
+                                    <a href="#">My Account</a>
+                                </li>
+                            <li>
+                                <a href="#">Track Your Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Store Locator</a>
+                            </li>
+                            <li>
+                                <a href="#">HK Cash</a>
+                            </li>
+                            <li>
+                                <a href="#">HK Coupons</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                        
+                        </div>
+                    </div>
+                    <div class="row_heading">
+                        <h3>Contact Us</h3>
+                        <div row2 >
+                            <li>
+                                    <a href="#">CARE@HEALTHKART.COM</a>
+                                </li>
+                            <li>
+                                <a href="#">0124-4616444</a>
+                            </li>
+                            <li>
+                                <a href="#"> Adress:<br>
+                                    The Presidency Tower, Tower-B,<BR>
+                                     2nd Floor, 46/4, Mehrauli Rd opp. <br>
+                                     government girls college, <br>
+                                     Anamika Enclave, Sector 14, <br>
+                                      Gurugram, Haryana</a>
+                            </li>
+                           
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+    </body>
+</html>
